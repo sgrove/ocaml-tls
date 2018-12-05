@@ -10,7 +10,6 @@ license:      "BSD2"
 
 build: [
   [ "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" "--tests" "false"
-    "--with-lwt" "%{lwt+ptime:installed}%"
     "--with-mirage" "%{mirage-flow-lwt+mirage-kv-lwt+mirage-clock+ptime:installed}%" ]
 ]
 build-test: [
